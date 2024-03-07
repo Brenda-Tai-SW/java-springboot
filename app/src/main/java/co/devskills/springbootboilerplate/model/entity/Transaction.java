@@ -6,24 +6,32 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.UUID;
+import javax.persistence.Column;
+import javax.persistence.Table;
+
 
 import java.time.LocalDateTime;
 
  @Entity
-//@Table(name = "Transactions")
+ @Table(name = "Transaction")
 public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
+    @Column(name = "transactionId")
     private UUID transactionId;
     
+    @Column(name = "accountId")
     private UUID accountId;
     
+    @Column(name = "amount")
     private int amount;
     
+    @Column(name = "createdAt")
     private LocalDateTime createdAt;
     
+    @Column(name = "transactionHistory")
     private String transactionHistory;
     
     

@@ -1,19 +1,19 @@
 package co.devskills.springbootboilerplate.model.dto;
 
-
+import java.util.UUID;
 
 
 
 public class TransactionRequest {
-    private String accountId;
+    private UUID accountId;
     private int amount;
 
-    public String getAccountId() {
+    public UUID getAccountId() {
         return accountId;
     }
 
    
-    public void setAccountId(String accountId) {
+    public void setAccountId(UUID accountId) {
         this.accountId = accountId;
     }
 

@@ -5,18 +5,24 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.UUID;
+import javax.persistence.Column;
+import javax.persistence.Table;
+
 
 
 
 
  @Entity
+ @Table(name = "account") 
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "accountId")
     private UUID accountId;
-
+    
+    @Column(name = "balance")
     private int balance;
 
     

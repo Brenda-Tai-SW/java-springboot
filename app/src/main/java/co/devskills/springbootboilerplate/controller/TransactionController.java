@@ -16,6 +16,7 @@ import co.devskills.springbootboilerplate.model.dto.TransactionsWithBalance;
 @RestController
 @RequestMapping("/transactions")
 @CrossOrigin(origins = "http://localhost:4200")
+@ResponseStatus(HttpStatus.OK)
 public class TransactionController {
 
     @Autowired
