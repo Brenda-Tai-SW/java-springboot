@@ -5,16 +5,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
 
 
 @SpringBootApplication
-//@EnableJpaRepositories(basePackages ={"co.devskills.springbootboilerplate.repository"})
-//@EntityScan("co.devskills.springbootboilerplate.model.entity")
-@ComponentScan(basePackages = {"co.devskills.springbootboilerplate.model.entity"})
+
 public class SpringBootBoilerplateApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootBoilerplateApplication.class, args);
+		
 	}
 
 }

@@ -24,7 +24,10 @@ public class TransactionController {
 
     @PostMapping
     public TransactionsWithBalance createTransaction(@RequestBody TransactionRequest transactionRequest) {
+    	
+    	System.out.println("before TransactionsWithBalance");
         return transactionService.createTransaction(transactionRequest);
+       
     }
 
 }

@@ -9,9 +9,6 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 
 
-
-
-
  @Entity
  @Table(name = "account") 
 public class Account {
